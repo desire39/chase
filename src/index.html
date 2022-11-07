@@ -1,66 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ===== Iconscout CSS ===== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-     <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <!-- CSS StyleSheet Link  -->
- <link rel="stylesheet" href="style.css">
-    <title>Sign-In</title>
-</head>
-<body>
-    <div class="txt">
-        <h1>Join Us Today By Signing Up</h1>
-      </div>
-        
-    </div>
-    <div class="wrapper">
-        <div class="heading">
-            <!-- <h1>Sign Up</h1> -->
-        </div>
-       <div class="form">
-            <form>
-                <span>
-                    
-                    <input type="text" placeholder="Username" name="name" required>
-                </span><br>
-                <span>
-                    
-                    <input type="text" placeholder="Enter Email" name="email" required>
-                </span><br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <!-- CUSTOM CSS LINK  -->
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form action="" class="signin--form">
+              <div class="logo">
+                <img src="./images/logo.png" alt=""/>   
+              </div>
 
-                <input type="text" placeholder="Mobile Phone" name="numeber" required >
-              
-            </span><br>
-                
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    required
+                  />
+                  <label>Name</label>
+                </div>
+
+                <div class="input-wrap">
+                    <input
+                      type="text"
+                      minlength="20"
+                      class="input-field"
+                      required
+                    />
+                    <label>Enter Email</label>
+                  </div>
+
+                  <div class="input-wrap">
+                    <input
+                      type="text"
+                      minlength="13"
+                      class="input-field"
+                      required
+                    />
+                    <label>Mobile Phone</label>
+                  </div>
+
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="8"
+                    class="input-field"
+                    required /> 
+                  <label> Enter Password</label>
+                  
+                </div>
+                <div class="input-wrap">
+                    <input type="password" minlength="8"
+                      class="input-field"
+                      required 
+                    />
+                    <label>Comfirm Password</label>
+                  </div>
+
+                <input type="submit" value="Sign up" class="sign-btn" />
+
+                <div class="text">
+                    <h6>Already a Member?</h6>
+                    <a href="#" class="toggle">Sign up</a>
+                  </div>
                
-                <span>
-                    <input type="password" placeholder="Password" name="password" required>
-                    <div class="ftb">
-                        <!-- <p >5-10 character</p> -->
-                    </div>
-                  
-                </span><br>
-                <span>
-                    <input type="password" placeholder="Comfirm password" name="Comfirm password" required>
-                    <div class="ftb">
-                        <!-- <p >5-10 character</p> -->
-                    </div>
-                  
-                </span><br>
-                 <a href="index.login">  <button>Sign In</button>
-                 </a> 
-                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-                <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
-           </form>
-       </div>
+              </div>
+            </form>
+
+           
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="./images/image1.png" class="image img-1 show" alt="" />
+              <img src="./images/image2.png" class="image img-2" alt="" />
+              <img src="./images/image3.png" class="image img-3" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Sign up today </h2>
+                  <h2>Customize as you like</h2>
+                  <h2>Connect with business account</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</body>
+      </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script src="index.js"></script>
+  </body>
 </html>
