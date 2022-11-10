@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Fontawesome Kit  -->
+    <script src="https://kit.fontawesome.com/1ce872d991.js" crossorigin="anonymous"></script>
+      <!-- Fontawesome CDN Link -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- CUSTOM CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+
+</head>
+<body>
+    <!-- header start  -->
+    <section class="header">
+        <div class="logo">
+            <i class="ri-menu-line icon icon-0 menu"></i>
+            <h2>Adm<span>in</span></h2>
+        </div>
+        <div class="search--notification--profile">
+            <div class="search">
+                <input type="text" placeholder="Search Scdule..">
+                <button><i class="ri-search-2-line"></i></button>
+            </div>
+            <div class="notification--profile">
+                <div class="picon lock">
+                    <i class="ri-lock-line"></i>
+                </div>
+                <div class="picon bell">
+                    <i class="ri-notification-2-line"></i>
+                </div>
+                <div class="picon chat">
+                    <i class="ri-wechat-2-line"></i>
+                </div>
+                <div class="picon profile">
+                    <img src="images/image7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End header section  -->
+
+    <!-- main section start  -->
+    <section class="main">
+        <!-- side bar nav  start -->
+        <div class="sidebar">
+            <ul class="sidebar--items">
+                <li>
+                    <a href="#">
+                        <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
+                        <span class="sidebar--item">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
+                        <span class="sidebar--item">Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" >
+                        <span class="icon icon-3"><i class="ri-user-2-line"></i></span>
+                        <span class="sidebar--item" style="white-space: nowrap;">Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="active--link">
+                        <span class="icon icon-4"><i class="ri-user-line"></i></span>
+                        <span class="sidebar--item">User setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-5"><i class="ri-line-chart-line"></i></span>
+                        <span class="sidebar--item">Activity</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="sidebar--bottom-items">
+                <li>
+                    <a href="#">
+                        <span class="icon icon-7"><i class="ri-settings-3-line"></i></span>
+                        <span class="sidebar--item">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
+                        <span class="sidebar--item">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Side Nav Ends -->
+
+
+        <!-- Main content start -->
+        <div class="main--content">
+            <div class="overview">
+                <div class="title">
+                    <h2 class="section--title">Overview</h2>
+                    <select name="date" id="date" class="dropdown">
+                        <option value="today">Today</option>
+                        <option value="lastweek">Last Week</option>
+                        <option value="lastmonth">Last Month</option>
+                        <option value="lastyear">Last Year</option>
+                        <option value="alltime">All Time</option>
+                    </select>
+                </div>
+
+                <!-- Card div start  -->
+                <div class="cards">
+                    <div class="card card-1">
+                        <div class="card--data">
+                            <div class="card--content">
+                                <h5 class="card--title">Users</h5>
+                                <h1>152</h1>
+                            </div>
+                            <i class="ri-user-2-line card--icon--lg"></i>
+                        </div>
+                        <div class="card--stats">
+                            <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>65%</span>
+                            <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>10</span>
+                            <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>2</span>
+                        </div>
+                    </div>
+                    <div class="card card-2">
+                        <div class="card--data">
+                            <div class="card--content">
+                                <h5 class="card--title">Recent Transaction</h5>
+                                <h1>1145</h1>
+                            </div>
+                            <i class="fa-solid fa-money-check"></i>
+                        </div>
+                        <div class="card--stats">
+                            <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>82%</span>
+                            <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>230</span>
+                            <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>45</span>
+                        </div>
+                    </div>
+                    <div class="card card-3">
+                        <div class="card--data">
+                            <div class="card--content">
+                                <h5 class="card--title">Schedule</h5>
+                                <h1>102</h1>
+                            </div>
+                            <i class="ri-calendar-2-line card--icon--lg"></i>
+                        </div>
+                        <div class="card--stats">
+                            <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>27%</span>
+                            <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>31</span>
+                            <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>23</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Ends  -->
+
+            </div>
+            <!-- users card start  -->
+            <div class="users">
+                <div class="title">
+                    <h2 class="section--title"><i class="fa-solid fa-user"></i> User </h2>
+                   
+                    <div class="user--right--btns">
+                     
+                         <!-- activation btn start -->
+            <div class="block">
+            <div class="block__cell">
+             <a href="#" class="btn btn--activate" id="btnActivation">
+            <span class="btn__icon"></span>
+             <span class="btn__text" data-wait="Waiting" data-after="Activated">Activate</span>
+              </a>
+                 </div>
+                      </div>
+
+                      <div class="block-">
+                        <div class="block__cell">
+                         <a href="#" class="btn1 btn1--deactivte" id="btnDeactivte">
+                        
+                         <span class="btn__text" data-wait="Waiting" data-after="Deactivte">Deactivate</span>
+                          </a>
+                             </div>
+                                  </div>
+
+                      
+
+                      <!--  active ends  -->
+
+                        <td></i><i class="ri-delete-bin-line delete"></i></span></td>
+                        <select name="date" id="date" class="dropdown doctor--filter">
+                            <option >Filter</option>
+                            <option value="free">Free</option>
+                            <option value="scheduled">Scheduled</option>
+                        </select>
+                        <button class="add"><i class="ri-add-line"></i>Add User</button>
+                    </div>
+                </div>
+              
+                <div class="user--cards">
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox" checked/>
+                          </label>
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/image1.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="free">Kelvin Mark</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox" checked/>
+                          </label>
+                        
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/image2.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="scheduled">Shaly Potter</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox" checked/>
+                          </label>
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/image3.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="scheduled"> Favour Micheal</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox" checked/>
+                          </label>
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/image4.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="free">Jace Norman</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox" checked/>
+                          </label>
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/image5.jpg">
+                            </div>
+                        </div>
+                        <p class="scheduled">Peace Phile</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox" checked/>
+                          </label>
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/image13.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="free">Daisy Oral</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox" checked/>
+                          </label>
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/image12.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="scheduled">Joy Favour</p>
+                    </a>
+                </div>
+            </div>
+            <!-- users card ends  -->
+
+            <div class="recent--users">
+                <div class="title">
+                    <h2 class="section--title">Transactions</h2>
+                         <button class="button-26" role="button">View current transaction</button>
+                    
+                </div>
+
+                 <!-- current transaction list  start  -->
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Date of Transaction</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th>Settings</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cameron Williamson</td>
+                                <td>30/07/2022</td>
+                                <td>1:00pm</td>
+                               
+                                <td class="pending">Rejected</td>
+                                <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td>George Washington</td>
+                                <td>09/07/2021</td>
+                                <td>9:00am</td>
+                                <td class="confirmed">Confirmed</td>
+                                <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td>John Adams</td>
+                                <td>21/05/2021</td>
+                                <td>5:00pm</td>
+                                <td class="confirmed">Confirmed</td>
+                                <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td>Thomas Jefferson</td>
+                                <td>29/01/2021</td>
+                                <td>3:00pm</td>
+                                <td class="rejected">Rejected</td>
+                                <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td>James Madison</td>
+                                <td>04/07/2022</td>
+                                <td>7:00am</td>
+                                <td class="confirmed">Confirmed</td>
+                                <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td>Andrew Jackson</td>
+                                <td>22/01/2021</td>
+                                <td>8:00am</td>
+                                <td class="confirmed">Confirmed</td>
+                                <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- current user transaction ends  -->
+            </div>
+        </div>
+    </section>
+    <!-- main section ends  -->
+
+
+    <!-- Custom Js Link  -->
+   <script src="script.js"></script>
+   
+</body>
+
+</html>
