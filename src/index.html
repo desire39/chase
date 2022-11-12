@@ -8,23 +8,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="reset-form-wrap">
-    <h2>Reset Password</h2>
-    <p>Enter your email to reset your password</p>
-    <form id="reset-form">
+  <div class="container">
+    <header> Enter Email to Reset Password</header>
+    <form action="#">
+      <div class="error-text"></div>
+      <div class="field">
+        <input type="email" id="email" name="email" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
+      </div>
+
       
-      <p>
-      <input type="email" id="email" name="email" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
-      </p>
-      <p>
-      <input type="submit" id="login" value="Reset Password">
-      </p>
-    </form>
+      <button type="submit"  class="reset">reset password</button>
+   
     <div id="reset-password-wrap">
       <p>Back to <a href="reset.html">Login</a><p>
     </div>
+      
+    </form>
   </div>
-    
 
   </div>
 </body>
