@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Boxicons Link -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Fontawesome Kit  -->
+    <script src="https://kit.fontawesome.com/1ce872d991.js" crossorigin="anonymous"></script>
+      <!-- Fontawesome CDN Link -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- CUSTOM CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+    <title>Users</title>
+
+</head>
+<body>
+
+ 
+    <!-- header start  -->
+    <section class="header">
+        <div class="logo">
+            <i class="ri-menu-line icon icon-0 menu"></i>
+            <h2>Adm<span>in</span></h2>
+        </div>
+        <div class="search--notification--profile">
+            <div class="search">
+                <input type="text" placeholder="Search..">
+                <button><i class="ri-search-2-line"></i></button>
+            </div>
+            <div class="notification--profile">
+                <div class="picon lock">
+                    <i class="ri-lock-line"></i>
+                </div>
+                <div class="picon bell">
+                    <i class="ri-notification-2-line"></i>
+                </div>
+                <div class="picon chat">
+                    <i class="ri-wechat-2-line"></i>
+                </div>
+                <div class="picon profile">
+                    <img src="images/image7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End header section  -->
+
+    <!-- main section start  -->
+    <section class="main">
+        <!-- side bar nav  start -->
+        <div class="sidebar">
+            <ul class="sidebar--items">
+                <li>
+                    <a href="index.html">
+                        <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
+                        <span class="sidebar--item">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
+                        <span class="sidebar--item">Schedule</span>
+                    </a>
+                </li>
+              
+                <li>
+                    <a href="add.html" id="active--link">
+                        <span class="icon icon-4"><i class="ri-user-line"></i></span>
+                        <span class="sidebar--item">User setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-5"><i class="ri-line-chart-line"></i></span>
+                        <span class="sidebar--item">Activity</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="sidebar--bottom-items">
+                <li>
+                    <a href="#">
+                        <span class="icon icon-7"><i class="ri-settings-3-line"></i></span>
+                        <span class="sidebar--item">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
+                        <span class="sidebar--item">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Side Nav Ends -->
+
+
+        <!-- Main content start -->
+        <div class="main--content">
+            <div class="overview">
+                <div class="title">
+                    <h2 class="section--title">Overview</h2>
+                    <select name="date" id="date" class="dropdown">
+                        <option value="today">Today</option>
+                        <option value="lastweek">Last Week</option>
+                        <option value="lastmonth">Last Month</option>
+                        <option value="lastyear">Last Year</option>
+                        <option value="alltime">All</option>
+                    </select>
+                </div>
+
+                <!-- Card div start  -->
+              
+                <!-- Card Ends  -->
+
+            </div>
+            <!-- users card start  -->
+            <div class="users">
+                <div class="title">
+                    <h2 class="section--title"><i class="fa-solid fa-user"></i> User </h2>
+                   
+                    <div class="user--right--btns">
+                     
+                         <!-- activation btn start -->
+            <div class="block">
+            <div class="block__cell">
+             <a href="#" class="btn btn--activate" id="btnActivation">
+            <span class="btn__icon"></span>
+             <span class="btn__text" data-wait="Waiting" data-after="Activated">Activate</span>
+              </a>
+                 </div>
+                      </div>
+
+                      <div class="block-">
+                        <div class="block__cell">
+                         <a href="#" class="btn1 btn1--deactivte" id="btnDeactivte">
+                        
+                         <span class="btn__text" data-wait="Waiting" data-after="Deactivte">Deactivate</span>
+                          </a>
+                             </div>
+                                  </div>
+
+                      
+
+                      <!--  active ends  -->
+
+                        <td></i><i class="ri-delete-bin-line delete"></i></span></td>
+                        <td></i><i class="ri-edit-line"></i></span></td>
+                        <td></i><i class="ri-add-box-line"></i></span></td>
+                        <select name="date" id="date" class="dropdown doctor--filter">
+                            <option >Filter</option>
+                            <option value="free">Recent</option>
+                            <option value="scheduled">Last</option>
+                        </select>
+
+                    </div>
+                </div>
+              
+                <div class="user--cards">
+                    <a href="#" class="user--card">
+                         <label>
+                            <input type="checkbox" class="option-input checkbox" />
+                          </label> 
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/warren-wong-VVEwJJRRHgk-unsplash.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="free">Isaac luck</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox" />
+                          </label>
+                        
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/vince-veras-AJIqZDAUD7A-unsplash.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="scheduled">Jade Vicky</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox"/>
+                          </label>
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/tyler-nix-X2YO8KFxgEM-unsplash.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="scheduled">Jackson</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox"/>
+                          </label>
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/midas-hofstra-a6PMA5JEmWE-unsplash.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="free">Henry Miracle</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox"/>
+                          </label>
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/leio-mclaren-L2dTmhQzx4Q-unsplash.jpg">
+                            </div>
+                        </div>
+                        <p class="scheduled">Abraham Moses</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox"/>
+                          </label>
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/photo-1568602471122-7832951cc4c5.avif" alt="">
+                            </div>
+                        </div>
+                        <p class="free">Jonremy Jay</p>
+                    </a>
+                    <a href="#" class="user--card">
+                        <label>
+                            <input type="checkbox" class="option-input checkbox"/>
+                          </label>
+                        <div class="img--box--cover">
+                            <div class="img--box">
+                                <img src="images/image12.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="scheduled">Mercy Micheal</p>
+                    </a>
+                    
+                </div>
+            </div>
+            <!-- users card ends  -->
+            <br>
+              <br>
+              <br>
+            <div class="user--cards">
+                <a href="#" class="user--card">
+                    <label>
+                        <input type="checkbox" class="option-input checkbox"/>
+                      </label>
+                    <div class="img--box--cover">
+                        <div class="img--box">
+                            <img src="images/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="free">Lily Hart</p>
+                </a>
+                <a href="#" class="user--card">
+                    <label>
+                        <input type="checkbox" class="option-input checkbox"/>
+                      </label>
+                    
+                    <div class="img--box--cover">
+                        <div class="img--box">
+                            <img src="images/harps-joseph-tAvpDE7fXgY-unsplash.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="scheduled">Jake Mark</p>
+                </a>
+                <a href="#" class="user--card">
+                    <label>
+                        <input type="checkbox" class="option-input checkbox" />
+                      </label>
+                    <div class="img--box--cover">
+                        <div class="img--box">
+                            <img src="images/charlesdeluvio-kVg2DQTAK7c-unsplash.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="scheduled">Jasper Leo</p>
+                </a>
+                <a href="#" class="user--card">
+                    <label>
+                        <input type="checkbox" class="option-input checkbox"/>
+                      </label>
+                    <div class="img--box--cover">
+                        <div class="img--box">
+                            <img src="images/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="free"> Emma Adreal</p>
+                </a>
+                <a href="#" class="user--card">
+                    <label>
+                        <input type="checkbox" class="option-input checkbox"/>
+                      </label>
+                    <div class="img--box--cover">
+                        <div class="img--box">
+                            <img src="images/aiony-haust-ITXtNqvfdOw-unsplash.jpg">
+                        </div>
+                    </div>
+                    <p class="scheduled">Juliet Ket</p>
+                </a>
+                <a href="#" class="user--card">
+                    <label>
+                        <input type="checkbox" class="option-input checkbox"/>
+                      </label>
+                    <div class="img--box--cover">
+                        <div class="img--box">
+                            <img src="images/aatik-tasneem-7omHUGhhmZ0-unsplash.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="free">Mike stone</p>
+                </a>
+                <a href="#" class="user--card">
+                    <label>
+                        <input type="checkbox" class="option-input checkbox"/>
+                      </label>
+                    <div class="img--box--cover">
+                        <div class="img--box">
+                            <img src="images/ana-itonishvili-Fyl8sMC2j2Q-unsplash.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="scheduled">Lana Charly</p>
+                </a>
+                
+            </div>
+        </div>
+          
+
+                 <!-- current transaction list  start  -->
+                
+                <!-- current user transaction ends  -->
+            </div>
+        </div>
+    </section>
+    <!-- main section ends  -->
+
+
+    <!-- Custom Js Link  -->
+   <script src="script.js"></script>
+   
+</body>
+
+</html>
