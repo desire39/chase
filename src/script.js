@@ -10,6 +10,10 @@ menu.onclick = function() {
 }
 // ENDS 
 
+var modeSwitch = document.querySelector('.mode-switch');
+modeSwitch.addEventListener('click', function () {                      document.documentElement.classList.toggle('light');
+ modeSwitch.classList.toggle('active');
+});
 
 // actvation  button start
 // $(document).ready (function(){
