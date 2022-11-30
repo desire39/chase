@@ -1,293 +1,841 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <!-- Fontawesome CDN Link -->
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Boxicons Link -->
-	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-<!-- CUSTOM CSS LINK  -->
-<link rel="stylesheet" href="../assets/css/user.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desinic - Get Best UI Design</title>
 
-	<title>User Dashboard</title>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- - material icon link -->
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  rel="stylesheet" />
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+    rel="stylesheet">
 </head>
-<body>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#">
+        <h1 class="logo">Chase</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Chase</a>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-navbar-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-navbar-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#features" class="navbar-link" data-navbar-link>Features</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-navbar-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn">
+        <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+
+        <span>Sign In</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+    </div>
+  </header>
 
 
-	<!-- SIDEBAR -->
-	<section id="sidebar">
-		<a href="#" class="brand">
-			<i class='bx bxs-user'></i>
-		
-		</a>
-		<ul class="side-menu top">
-			<li class="active">
-				<a href="dashbard.html">
-					<i class='bx bxs-dashboard' ></i>
-					<span class="text">Dashboard</span>
-				</a>
-			</li>
-			<li>
-				<a href="./account.html">
-					<i class='bx bxs-user-account' ></i>
-					<span class="text">My Account</span>
-				</a>
-			</li>
-			<li>
-				<a href="account.html">
-					<i class='bx bx-money' ></i>
-				  <span class="text">Payment</span>
-				</a>
-			</li>
-			<li>
-				<a href="view.html">
-					<i class='bx bxs-bank' ></i>
-					<span class="text">Transfer Histroy</span>
-				</a>
-			</li>
-			<li>
-				<a href="card.html">
-					<i class='bx bxs-credit-card' ></i>
-					<span class="text">Card</span>
-				</a>
-			</li>
-		</ul>
-		<ul class="side-menu">
-			
-			<li>
-				<a href="../login.html" class="logout">
-					
-					<i class='bx bxs-log-out-circle' ></i>
-					<span class="text">Logout</span>
-				</a>
-			</li>
-		</ul>
-	</section>
-	<!-- SIDEBAR -->
 
 
 
-	<!-- CONTENT -->
-	<section id="content">
-		<!-- NAVBAR -->
-		<nav>
-			<i class='bx bx-menu' ></i>
-			<a href="index.html" class="nav-link">My Account</a>
-			<form action="#">
-				<div class="form-input">
-					<input type="search" placeholder="Search...">
-					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
-				</div>
-			</form>
-			<input type="checkbox" id="switch-mode" hidden>
-			<label for="switch-mode" class="switch-mode"></label>
-			<a href="#" class="notification">
-				<i class='bx bxs-bell' ></i>
-				<span class="num">8</span>
-			</a>
-			<a href="#" class="profile">
-				<img src="../assets/images/image9.jpg">
-			</a>
-		</nav>
-		<!-- NAVBAR -->
+  <main>
+    <article>
 
-		<!-- MAIN -->
-		<main>
-			<div class="head-title">
-				<div class="left">
-					<h1>Dashboard</h1>
-					<ul class="breadcrumb">
-						<li>
-							<a href="index.html">Dashboard</a>
-						</li>
-						<li><i class='bx bx-chevron-right' ></i></li>
-						<li>
-							<a class="active" href="index.html">My Acoount</a>
-						</li>
-					</ul>
-				</div>
-				<a href="account.html" class="btn-download">
-					<i class='bx bxs-arrow-from-left' ></i>
-					<span class="text">Deposit</span>
-				</a>
-			</div>
+      <!-- 
+        - #HERO
+      -->
 
-			<ul class="box-info">
-				<li>
-					<i class='bx bxs-dollar-circle' ></i>
-					<span class="text">
-						<h3>Main Balance</h3>
-						 <a href="#"><p>$34,010.00</p></a>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-bank'></i>
-					<span class="text1">
-						<h3>$2834</h3>
-					<a href="#"><p>Transfers to other bank</p></a>
-					</span>
-				</li>
-				<li>
-					<a href="account.html"></a>
-				   <i class='bx bxs-bank' ></i>
-					<span class="text2">
-						<h3>$2543</h3>
-						<a href="account.html"><p>Transfer to same bank </p></a>
-					</span>
-				</li>
-			</ul>
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle"> Open our most popular account now.</p>
+
+            <h2 class="h2 hero-title">We Have The Right Card For You</h2>
+
+            <p class="hero-text">
+             Cash Bank, Savings or interest, or travel rewards --- We have the right card to fit your need.
+            
+            </p>
+
+            <button class="btn">Open Account</button>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/card.jpg" width="694" height="529" loading="lazy" alt="hero-banner"
+              class="w-100 banner-animation">
+          </figure>
+
+        </div>
+      </section>
 
 
-			<div class="table-data">
-				<div class="recent">
-					<div class="head">
-						<h3>Trasaction History</h3>
-					<a href="view.html"><i class='bx bx-plus'></i></a>
-						<i class='bx bx-edit' ></i>
-						<form action="https://www.google.com/">
-							<div class="form-input">
-								<input type="search" placeholder="Search.. ">
-								<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
-							</div>
-						</form>
-						
-						
-					</div>
-					<table>
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Date</th>
-								<th>Email</th>
-								<th>Status</th>
-								
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img src="../assets/images/image1.jpg">
-									<p>Victor</p>
-								</td>
-								<td>Feb 14,2022</td>
-								<td><p>Victor@gmail.com</p> </td>
-								<td><span class="status sucessful">Sucessful</span></td>
-								<td><i class='bx bx-trash' ></i></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/images/image10.jpg">
-									<p>Ella</p>
-								</td>
-								<td>June 11,2022</td>
-								<td><p>Elladavis@gmail.com</p> </td>
-								<td><span class="status pending">Pending</span></td>
-								<td><i class='bx bx-trash' ></i></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/images/image11.jpg">
-									<p>Shaly </p>
-								</td>
-								<td>July 30,2022</td>
-								<td><p>DavidSharly@gmail.com</p> </td>
-								<td><span class="status sucessful">Sucessful</span></td>
-								<td><i class='bx bx-trash' ></i></td>
-
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/images/image8.jpg">
-									<p> Jace</p>
-								</td>
-								<td>March 12, 2022</td>
-								<td><p>Jay@gmail.com</p> </td>
-								<td><span class="status pending">Pending</span></td>
-								<td><i class='bx bx-trash' ></i></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/images/image6.jpg" style="width: 40px;">
-									<p>Daisy</p>
-								</td>
-								<td>Jan 20,2022</td>
-								<td><p>Daisy@gmail.com</p> </td>
-								<td><span class="status sucessful">Sucessful</span></td>
-								<td><i class='bx bx-trash' ></i></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/images/image6.jpg">
-									<p>Daisy</p>
-								</td>
-								<td>Jan 20,2022</td>
-								<td><p>Daisy@gmail.com</p> </td>
-								<td><span class="status sucessful">Sucessful</span></td>
-								<td><i class='bx bx-trash' ></i></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/images/image6.jpg">
-									<p>Daisy</p>
-								</td>
-								<td>Jan 20,2022</td>
-								<td><p>Daisy@gmail.com</p> </td>
-								<td><span class="status sucessful">Sucessful</span></td>
-								<td><i class='bx bx-trash' ></i></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="todo">
-					<div class="head">
-						<h3>Activities</h3>
-						<i class='bx bx-plus' ></i>
-						<i class='bx bx-filter' ></i>
-					</div>
-					<ul class="todo-list">
-						<li class="completed">
-							<i class='bx bx-wifi' ></i>
-							<p>Internet</p>
-							<p>$100</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="completed">
-							<i class='bx bx-money' ></i>
-							<p>Loan</p>
-							<p>$3842</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="not-completed">
-							<i class='bx bx-water' ></i>
-							<p>Water Bill</p>
-							<p>$267</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="completed">
-							<i class='bx bxl-pinterest' ></i>
-							<p>pinterest</p>
-							<p>$234</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="not-completed">
-							<i class='bx bx-book' ></i>
-							<p>Online course</p>
-							<p>$4000</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</main>
-		<!-- MAIN -->
-	</section>
-	<!-- CONTENT -->
-	
 
 
-	<script src="js/script.js"></script>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/Firefox_Screenshot_2022-11-18T18-40-34.319Z.png" width="500" height="432" loading="lazy" alt="about banner"
+              class="w-100 banner-animation">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title underline">4 ways to increase your
+              savings </h2>
+
+            <p class="about-text">
+              Earn 5%-15% when you save 
+              with any of these plans.
+            </p>
+
+            <!-- <p class="about-text">
+              Praesent rhoncus commodo tortor, id pulvinar nisl blandit at. Nulla facilisi. Quisque turpis ante,
+              vehicula condimentum
+              arcu.
+            </p> -->
+
+            <ul class="stats-list">
+
+              <li class="stats-card">
+                <p class="h3 stats-title">9875</p>
+
+                <p class="stats-text">Satisfied Clients</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">7894</p>
+
+                <p class="stats-text">Project Lunched</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">65</p>
+
+                <p class="stats-text">Years Completed</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="services">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">Our Speciallization</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Fixed saving </h3>
+
+                <p class="text">
+                  Lock money away for a set period
+                  of time with no access to it until
+                  maturity.
+                  It's similar to having a personalized 
+                 fixed deposit.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Save automatically</h3>
+
+                <p class="text">
+                   Choose between automatic daily, weekly or monthly savings. 
+                  Once you choose, our system does the rest for you. You’re in control,
+                   and can always change your settings anytime.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cash-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title"> Build disciplines</h3>
+
+                <p class="text">
+                 
+
+                  With four free withdrawal days in the year, you are less tempted to spend your savings and meet your savings goals faster.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features" id="features">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">Online Banking</h2>
+
+          <ul class="features-list">
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="bulb-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Online Banking</h3>
+
+                  <p class="text">
+                    Our Online Banking products enables you to make payments, transfer money and buy airtime easily. Discover more below.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="person-add-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title"> Find the Right Account</h3>
+
+                  <p class="text">
+                  Save at competitive interest rates with flexible withdrawals
+                  </p>
+                  <br>
+                 <button class="btn">Learn More</button>
+                   <!-- <a href="#" class="btn">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+            
+                    <span>Sign In</span> -->
+                  <!-- </a> -->
+
+                </div>
+              
+
+              </div>
+            </li>
+
+          </ul>
+
+          <figure class="features-banner">
+            <img src="./assets/images/feautres-banner.png" width="369" height="318" loading="lazy" alt="Features Banner"
+              class="w-100 banner-animation">
+          </figure>
+
+          <ul class="features-list">
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="cash-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">  Get a Loan Approved</h3>
+
+                  <p class="text">
+                Chase Bank offers a wide range of loans to make your vision a reality
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Security and control at your figertips</h3>
+
+                  <p class="text">
+                    With the chase mobile® app, you can manage your accounts anytime, anywhere, lock your card, view recent transaction, set up payment and more.
+                  </p>
+                  <br>
+                  <button class="btn">Continue</button>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">Our Blog & News</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-1.jpg" width="750" height="350" loading="lazy"
+                      alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Transactional Products and Services 
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Corporate and Investment Banking's 
+                    TransactionalProducts and Services team gives
+                     clients access to a full spectrum ofsolutions for 
+                    Africa.
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" width="750" height="350" loading="lazy"
+                      alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Chase® SELF INVEST
+                    Invest with $0 Commission
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                   
+                    
+                   Take control with self-directed trading from 
+                     Chase  Personal Wealth Management.
+                    
+                    
+                    
+                      • INVESTMENT  INSURED 
+                     •  NO BANK GUARANTEES 
+                     •  MAY LOSE VALUE
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" width="750" height="350" loading="lazy"
+                      alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere.
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                    imperdiet.
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-4.jpg" width="750" height="350" loading="lazy"
+                      alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis.
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                    imperdiet.
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Chase</a>
+
+          <p class="text">
+            Maecenas pellentesque placerat quam, in finibus nisl tincidunt sed. Aliquam magna augue, malesuada ut
+            feugiat eget,
+            cursus eget felis.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Services</a>
+          </li>
+
+           <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Features</p>
+          </li>
+
+        
+          <li>
+            <a href="#" class="footer-link"> chase card </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              Spend</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Save</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">  Budget</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"> Borrow</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Help</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Security</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Support</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:+2484214313" class="footer-item-link">+234-223-361</a>
+              <a href="tel:+2486871365" class="footer-item-link">+248-687-1365</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@desinic.com" class="footer-item-link">chase@gmail.com</a>
+              <a href="mailto:help@desinic.com" class="footer-item-link">help@chase.com</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+
+            <address class="footer-item-link">
+              Lagos, Michigan, Nigeria
+            </address>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2022 <a href="#" class="copyright-link">ChaseBank</a>. All Right Reserved
+      </p>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
 
