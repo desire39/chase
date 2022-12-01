@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Confirm Password </title>
+    <link rel="stylesheet" href="assets/css/Resetpass.css">
+  </head>
+  <body>
+   
+   
+    <div class="container">
+      <header>Reset Password</header>
+      <form action="#">
+        <div class="error-text"></div>
+        <div class="field">
+          <input onkeyup="active()" id="pswrd_1" type="password" placeholder="Enter Password" required>
+        </div>
+        <div class="field">
+          <input onkeyup="active_2()" id="pswrd_2" disabled type="password" placeholder="Confirm Password"required>
+          <div class="show">SHOW</div>
+        </div>
+        <button  disabled class="resetbtn">reset password</button>
+        <!-- <button disabled>Confirm</button> -->
+      </form>
+    </div>
+
+   <script src="./assets/js/pass.js"></script>
+
+  </body>
+</html>
