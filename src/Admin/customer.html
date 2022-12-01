@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;900&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - material icon link
+  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">Dashboard</a>
+      </h1>
+
+      <button class="menu-toggle-btn icon-box" data-menu-toggle-btn aria-label="Toggle Menu">
+        <span class="material-symbols-rounded  icon">menu</span>
+      </button>
+
+      <nav class="navbar">
+        <div class="container">
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link active icon-box">
+                <span class="material-symbols-rounded  icon">grid_view</span>
+
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="customer.html" class="navbar-link icon-box">
+                <span class="material-symbols-rounded">
+                  person
+                  </span>
+                <span>Customer</span>
+              </a>
+            </li>
+
+
+
+            <li>
+              <a href="#" class="navbar-link icon-box">
+                <span class="material-symbols-rounded  icon">bar_chart</span>
+
+                <span>Schdules</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html" class="navbar-link icon-box">
+                <span class="material-symbols-rounded  icon">settings</span>
+
+                <span>Settings</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="user-action-list">
+
+            <li>
+              <a href="#" class="notification icon-box">
+                <span class="material-symbols-rounded  icon">notifications</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-profile">
+
+                <figure class="profile-avatar">
+                  <img src="./assets/imgs/customer01.jpg" alt="Jace Jason" width="32" height="32">
+                </figure>
+
+                <div>
+                  <p class="profile-title">Jace Jason</p>
+
+                  <p class="profile-subtitle">Admin</p>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+  <div class="card profile-card">
+
+    <button class="card-menu-btn icon-box" aria-label="More" data-menu-btn style="background-color: #fff;">
+      <span class="material-symbols-rounded  icon">more_horiz</span>
+    </button>
+
+    <ul class="ctx-menu">
+
+      <li class="ctx-item">
+        <button class="ctx-menu-btn icon-box">
+          <span class="material-symbols-rounded  icon" aria-hidden="true">edit</span>
+
+          <span class="ctx-menu-text">Edit</span>
+        </button>
+      </li>
+
+      <li class="ctx-item">
+        <button class="ctx-menu-btn icon-box">
+          <span class="material-symbols-rounded  icon" aria-hidden="true">cached</span>
+
+          <span class="ctx-menu-text">Refresh</span>
+        </button>
+      </li>
+
+      <li class="divider"></li>
+
+      <li class="ctx-item">
+        <button class="ctx-menu-btn red icon-box">
+          <span class="material-symbols-rounded  icon" aria-hidden="true">delete</span>
+
+          <span class="ctx-menu-text">Delete</span>
+        </button>
+      </li>
+      
+
+    </ul>
+    </div>
+
+  <div class="records table-responsive">
+
+    <div class="record-header">
+        <div class="add">
+            <span>Entries</span>
+            <select name="" id="">
+                <option value="">ID</option>
+            </select>
+            <button>Add record</button>
+        </div>
+
+        <div class="browse">
+           <input type="search" placeholder="Search" class="record-search">
+            <select name="" id="">
+                <option value="">Status</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        
+        <table width="100%">
+            <thead>
+               
+    
+                <tr>
+                    <th>#</th>
+                    <th><span class=""></span>NAME</th>
+                    <th><span class="las la-sort"></span>ACCOUNT NUMBER</th>
+                    <th><span class="las la-sort"></span> ACCOUNT</th>
+                    <th><span class="las la-sort"></span> BALANCE</th>
+                    <th><span class="las la-sort"></span> STATUS</th>
+                   
+                </tr>
+            </thead>
+            <!-- customer one start -->
+            <tbody>
+                <tr>
+                    <td>#5033</td>
+                    <td>
+                        <div class="client">
+                           <div class="client-img bg-img">
+                           <img src="./assets/imgs/image6.jpg" alt="Elizabeth Foster" width="42" height="42">
+                        </div>
+                            <div class="client-info">
+                                <h4> Lily Andrew </h4>
+                                <small>Liliy@gmail.com</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        735142530
+                    </td>
+                    <td>
+                      Savings
+                    </td>
+                    <td>
+                        $1205
+                    </td>
+                    <td>
+                        <div class="toggler">
+                            <input id="toggler-9" name="toggler-1" type="checkbox" value="1"/>
+                            <label for="toggler-9">
+                              <svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+                              </svg>
+                              <svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+                                <line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+                              </svg>
+                            </label>
+                          </div>
+                    </td>
+                </tr>
+                <!-- Ends  -->
+
+                <!-- Two Start -->
+                <tr>
+                    <td>#0333</td>
+                    <td>
+                        <div class="client">
+                            <div class="client-img bg-img">
+                                <img src="./assets/imgs/image9.jpg" alt="Elizabeth Foster" width="42" height="42">
+                             </div>
+                            <div class="client-info">
+                                <h4> Bruno Mark</h4>
+                                <small>Bruno@gmail.com</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        053247483
+                    </td>
+                    <td>
+                       Current
+                    </td>
+                    <td>
+                        -$2105
+                    </td>
+                    <td>
+                       <div class="toggler">
+                            <input id="toggler-1" name="toggler-1" type="checkbox" value="1"/>
+                              <label for="toggler-1">
+      <svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+        <polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+      </svg>
+      <svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+        <line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+        <line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+      </svg>
+                             </label>
+                              </div>
+ 
+                    </td>
+                </tr>
+                <!-- Ends  -->
+                <tr>
+                    <td>#8721</td>
+                    <td>
+                        <div class="client">
+                            <div class="client-img bg-img">
+                                <img src="./assets/imgs/image5.jpg" alt="Elizabeth Foster" width="42" height="42">
+                             </div>
+                            <div class="client-info">
+                                <h4>Joy Favour</h4>
+                                <small>Favour@gmail.com</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        91028383
+                    </td>
+                    <td>
+                        Current
+                    </td>
+                    <td>
+                        <span class="paid">$7813</span>
+                    </td>
+                    <td>
+                        <div class="toggler">
+                            <input id="toggler-8" name="toggler-1" type="checkbox" value="1"/>
+                            <label for="toggler-8">
+                              <svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+                              </svg>
+                              <svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+                                <line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+                              </svg>
+                            </label>
+                          </div>
+                    </td>
+                </tr>
+                <!-- Ends  -->
+                <tr>
+                    <td>#8223</td>
+                    <td>
+                        <div class="client">
+                            <div class="client-img bg-img">
+                                <img src="./assets/imgs/image4.jpg" alt="Elizabeth Foster" width="42" height="42">
+                             </div>
+                            <div class="client-info">
+                                <h4>Jace Norman</h4>
+                                <small>bJacen@gmail.com</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        62525263
+                    </td>
+                    <td>
+                        Savings
+                    </td>
+                    <td>
+                        $829
+                    </td>
+                    <td>
+                        <div class="toggler">
+                            <input id="toggler-7" name="toggler-1" type="checkbox" value="1"/>
+                            <label for="toggler-7">
+                              <svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+                              </svg>
+                              <svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+                                <line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+                              </svg>
+                            </label>
+                          </div>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Ends -->
+                    <td>#9082</td>
+                    <td>
+                        <div class="client">
+                            <div class="client-img bg-img">
+                                <img src="./assets/imgs/image3.jpg" alt="Elizabeth Foster" width="42" height="42">
+                             </div>
+                            <div class="client-info">
+                                <h4>Lana Peace</h4>
+                                <small>Lanapeace@gmail.com</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        82736363
+                    </td>
+                    <td>
+                        Current
+                    </td>
+                    <td>
+                        <span class="paid">-$342</span>
+                    </td>
+                    <td>
+                        <div class="toggler">
+                            <input id="toggler-6" name="toggler-1" type="checkbox" value="1"/>
+                            <label for="toggler-6">
+                              <svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+                              </svg>
+                              <svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+                                <line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+                              </svg>
+                            </label>
+                          </div>
+                    </td>
+                </tr>
+                <!-- End  -->
+                <tr>
+                    <td>#9833</td>
+                    <td>
+                        <div class="client">
+                            <div class="client-img bg-img">
+                                <img src="./assets/imgs/image13.jpg" alt="Elizabeth Foster" width="42" height="42">
+                             </div>
+                            <div class="client-info">
+                                <h4>Daisy Oreal</h4>
+                                <small>daisy@gmail.com</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        28364627
+                    </td>
+                    <td>
+                       Savings
+                    </td>
+                    <td>
+                        <span class="paid">$10000</span>
+                    </td>
+                    <td>
+                        <div class="toggler">
+                            <input id="toggler-5" name="toggler-1" type="checkbox" value="1"/>
+                            <label for="toggler-5">
+                              <svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+                              </svg>
+                              <svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+                                <line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+                              </svg>
+                            </label>
+                          </div>
+                    </td>
+                </tr>
+                <!-- End -->
+                <tr>
+                    <td>#8262</td>
+                    <td>
+                        <div class="client">
+                            <div class="client-img bg-img">
+                                <div class="client-img bg-img">
+                                    <img src="./assets/imgs/image11.jpg" alt="Elizabeth Foster" width="42" height="42">
+                                 </div>
+                             </div>
+                            <div class="client-info">
+                                <h4>Kelvin Marle</h4>
+                                <small>kelvin@gmail.com</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        7372821
+                    </td>
+                    <td>
+                        current
+                    </td>
+                    <td>
+                        -$2345
+                    </td>
+                    <td>
+
+                        
+                        <div class="toggler">
+                            <input id="toggler-4" name="toggler-1" type="checkbox" value="1"/>
+                            <label for="toggler-4">
+                              <svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+                              </svg>
+                              <svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+                                <line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+                              </svg>
+                            </label>
+                          </div>
+                    </td>
+                </tr>
+                <!-- End  -->
+                <tr>
+                    <td>#8392</td>
+                    <td>
+                        <div class="client">
+                            <div class="client-img bg-img">
+                                <img src="./assets/imgs/image10.jpg" alt="Elizabeth Foster" width="42" height="42">
+                             </div>
+                            <div class="client-info">
+                                <h4>Elizabeth Ana</h4>
+                                <small>Elizaana@gmail.com/small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        827522310
+                    </td>
+                    <td>
+                        Current
+                    </td>
+                    <td>
+                        -$91625
+                    </td>
+                    <td>
+                        <div class="toggler">
+                            <input id="toggler-3" name="toggler-1" type="checkbox" value="1"/>
+                            <label for="toggler-3">
+                              <svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+                              </svg>
+                              <svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+                                <line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+                              </svg>
+                            </label>
+                          </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#9283</td>
+                    <td>
+                        <div class="client">
+                            <div class="client-img bg-img">
+                                <img src="./assets/imgs/image1.jpg" alt="Elizabeth Foster" width="42" height="42">
+                             </div>
+                            <div class="client-info">
+                                <h4>Jay Moses</h4>
+                                <small>moses@gmail.com</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                    022383171
+                    </td>
+                    <td>
+                        Savings
+                    </td>
+                    <td>
+                        <span class="paid">$3242</span>
+                    </td>
+                    <td>
+                        <div class="toggler">
+                            <input id="toggler-2" name="toggler-1" type="checkbox" value="1"/>
+                            <label for="toggler-2">
+                              <svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+                              </svg>
+                              <svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+                                <line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+                                <line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+                              </svg>
+                            </label>
+                          </div>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
