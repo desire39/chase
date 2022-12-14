@@ -1,0 +1,20 @@
+{
+  "status": {
+      "type": "success",
+      "message": "Success",
+      "code": 200,
+      "error": false
+  },
+  "data": [
+      {
+          "status": "Authenticated",
+          "user": {
+              "token": "45erkjherht45495783",
+              "id": 1,
+             "username": "Example@johnmike",
+             "password" : "P@33w0rd!",
+             "remember me" : "true"
+          }
+      }
+  ]
+}
