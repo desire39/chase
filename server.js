@@ -3,7 +3,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 
-import usersRoutes from './routes/login.js';
+import usersRoutes from './routes/signup.js';
 
 const app = express();
 const PORT = 5000;
