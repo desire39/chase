@@ -1,0 +1,14 @@
+
+{
+    "status":200,
+    "message" : "login successful",
+   "data" : {
+        "token":"45erkjherht45495783",
+         "id": "integer",
+        "username":"string",
+        "password": "string",
+        "rememer me": "true"
+
+    }
+   
+}
