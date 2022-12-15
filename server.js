@@ -1,13 +1,16 @@
 /* eslint-disable no-console */
-const express = require('express');
+/* eslint-disable import/extensions */
+import express from 'express';
+import bodyParser from 'body-parser';
+
+import usersRoutes from './routes/login.js';
 
 const app = express();
+const PORT = 5000;
 
-app.get('/', (req, res) => {
-  res.end('Welcome to my login');
-});
+app.use(bodyParser.json());
+app.use('/auth/v1/signup', usersRoutes);
 
-app.use(require('./modules/login'));
+app.get('/', (req, res) => res.send('Hello from Homepage'));
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`listening on port ${port}...`));
+app.listen(PORT, () => console.log(`Server running on port: http://localhost: ${PORT}`));

@@ -1,0 +1,14 @@
+{
+  
+  "data": [
+      {
+          "user": {
+              "id": "integer",
+             "username": "String",
+             "email":"string",
+             "password" : "string"
+            
+          }
+      }
+  ]
+}
