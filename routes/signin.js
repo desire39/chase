@@ -1,7 +1,7 @@
 import express from 'express';
 
 // eslint-disable-next-line import/extensions
-import { createUser, getUsers, getUser } from '../controller/user.js';
+import { createUser, getUsers, getUser } from '../controller/signin.js';
 
 const router = express.Router();
 
