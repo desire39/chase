@@ -5,9 +5,10 @@ const app = express();
 const fs = require('fs');
 
 app.get('/', (req, res) => {
-  res.end('Hello Word!');
+  res.end('testing setup!');
 });
 app.get('/test', (req, res) => {
+  // eslint-disable-next-line no-useless-concat
   fs.readFile(`${__dirname}/` + './config/test.json', 'utf8', (err, data) => {
     res.end(data);
   });
