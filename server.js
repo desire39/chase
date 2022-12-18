@@ -1,17 +1,18 @@
-/* eslint-disable no-console */
-/* eslint-disable import/extensions */
-import express from 'express';
-import bodyParser from 'body-parser';
 
-import usersRoutes from './routes/delete.js';
+const express = require("express")
+const bodyParser = require("body-parser")
+const fs = require('fs');
 
-const app = express();
-const PORT = 5000;
+// create our express app
+const app = express()
+// middleware
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }));
+// route
+const routes = require('./Routes/Route')
+app.use('/', routes)
 
-app.use(bodyParser.json());
-
-app.use('/delete', usersRoutes);
-app.get('/', (req, res) => res.send('Welcome to the Users API!'));
-app.all('*', (req, res) => res.send("You've tried reaching a route that doesn't exist."));
-
-app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}`));
+//start server
+app.listen(3000, ()=>{
+    console.log("listeniing at port:3000")
+}) 
