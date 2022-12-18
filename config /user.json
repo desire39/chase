@@ -1,8 +1,0 @@
-
-{
-    "status":"integer",
-    "data":{
-        "accountNumber":"integer",
-        "status":"string"
-    }
-}
