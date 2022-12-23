@@ -1,3 +1,42 @@
-[{"transactionID":3005,"AccountNumber":9489549892,"amount":"$200","cashier":"integer","transactionType":"current","accountBalance":"string"},{"transactionID":3006,"AccountNumber":9874721666,"amount":"$2100","cashier":"integer","transactionType":"savings","accountBalance":"string"},{"transactionID":3007,"AccountNumber":7867473219,"amount":"$600","cashier":"integer","transactionType":"savings","accountBalance":"string"},{"transactionID":3008,"AccountNumber":77367278819,"amount":"$6700","cashier":"integer","transactionType":"current","accountBalance":"string"},{"transactionID":3009,"AccountNumber":9899498932,"amount":"$200","cashier":"integer","transactionType":"savings","accountBalance":"string"},{"transactionID":3010,"AccountNumber":8473252536,
+[
+    {
+        "transactionID":1029,
+        "accountNumber":51728713983,
+        "amount":"$3921",
+        "transactionType":"Savings",
+        "accountBalance":"$4000"
 
-"amount":"$200","cashier":"integer","transactionType":"current","accountBalance":"string"}]
+
+    },
+    
+        {
+            "transactionID":2022,      
+            "accountNumber":9889298473,
+            "amount":"$300",
+            "transactionType":"Current",
+            "accountBalance":"$1000"
+    
+    
+        },
+        
+            {
+                "transactionID":1345,
+                "accountNumber":74677328891,
+                "amount":"$292",
+                "transactionType":"savings",
+                "accountBalance":"$40"
+        
+        
+            },
+            
+                {
+                    "transactionID":1029,
+                    "accountNumber":51728713983,
+                    "amount":"$321",
+                    "transactionType":"Current",
+                    "accountBalance":"$100"
+            
+            
+                }
+
+]

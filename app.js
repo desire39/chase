@@ -1,17 +1,15 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-// eslint-disable-next-line no-unused-vars
-const fs = require('fs');
+import express from "express";
+import bodyParser from "body-parser";
+
+import usersRoutes from "./Routes/account.js";
 
 const app = express();
+const PORT = 4000;
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
-const routes = require('./Routes/Route');
+app.use("/user", usersRoutes);
+app.get("/", (req, res) => res.send("Welcome to the Users API!"));
+app.all("*", (req, res) =>res.send("You've tried reaching a route that doesn't exist."));
 
-app.use('/', routes);
-
-app.listen(3000, () => {
-  console.log('listeniing at port:3000');
-});
+app.listen(PORT, () =>console.log(`Server running on port: http://localhost:${PORT}`));
