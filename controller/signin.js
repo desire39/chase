@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
 
 uuidv4();
+import users from '../config/user.json' assert{type: 'json'};
 
-const users = [];
 
 export const getUsers = (req, res) => {
   // eslint-disable-next-line no-console
@@ -13,7 +13,7 @@ export const getUsers = (req, res) => {
 
 export const createUser = (req, res) => {
   const user = req.body;
-  users.push({ ...user, id: uuidv4() });
+  users.push({user, id: uuidv4() });
   res.send(`User with the username and password ${user.name} has been added to the database!`);
 };
 

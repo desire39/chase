@@ -1,14 +1,20 @@
-
-{
-    "status":200,
-    "message" : "login successful",
-   "data" : {
+[
+    {
+        "id": 3003,
         "token":"45erkjherht45495783",
-         "id": "integer",
-        "username":"string",
-        "password": "string",
-        "rememer me": "true"
-
+        "username":"mercy chisom",
+        "password" :"uzodhhhd2ei"
+    },
+    {
+        "id": 2560,
+        "token":"45erkjherht45495783",
+        "username":"daisy mike",
+        "password" :"mikeijisda"
+    },
+    {
+        "id": 15601,
+        "token":"45erkjherht45495783",
+        "username":"victorhart mike",
+        "password" :"killjs123"
     }
-   
-}
+]
