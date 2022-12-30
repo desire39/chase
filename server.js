@@ -1,71 +1,65 @@
-const bcrypt = require('bcrypt');
+
 const express = require('express');
 const jwt = require('jsonwebtoken');
 
-const auth = require('./authenticate');
-
-
-const users = require("./data/user.json");
-
 const app = express();
 
-app.use(express.json());
-
-
-
-app.get('/', (req, res) => {
-  res.send('Hello, World!')
-});
-
-
-app.get('/auth', auth, (req, res) => {
-  res.status(200).json({
-      status: 'success',
-      message: 'Logged In User Information.',
-      data: {
-        user: {
-            email: req.user.email,
-        },
-      },
-    });
-});
-
-
-app.post('/auth/v1/login', async (req, res) => {
-    try {
-        const user = users.find(user => user.email === req.body.email);
-        if (!user) {
-            const err = new Error('User Not Found!')
-            err.status = 400;
-            throw err;
-        } else if (await bcrypt.compare(req.body.password, user.password)) {
-            const tokenPayload = {
-              email: user.email,
-            };
-            const accessToken = jwt.sign(tokenPayload, 'SECRET');
-            res.status(200).json({
-                status: 'success',
-                message: 'User Logged In!',
-                data: {
-                  accessToken,
-                },
-              });
-        } else {
-            const err = new Error('Wrong Password!');
-            err.status = 400;
-            throw err;
-          }
-      } catch (err) {
-        res.status(err.status).json({
-            status: 'fail',
-            message: err.message,
-          });
-      }
+app.get('/api', (req, res) => {
+  res.json({
+    message: 'Welcome users'
   });
+});
 
-app.listen(4000, ()=>{
-       console.log("listeniing at port:4000")
-    }) 
+app.post('/auth/posts', verifyToken, (req, res) => {  
+  jwt.verify(req.token, 'secretkey', (err, authData) => {
+    if(err) {
+      res.sendStatus(403);
+    } else {
+      res.json({
+        message: 'users login successful',
+        authData
+      });
+    }
+  });
+});
+
+app.post('/auth/v1/login', (req, res) => {
+ 
+  const user = [{
+    id: 1, 
+    username: 'brad',
+    email: 'brad@gmail.com'
+  },
+  {
+    id: 2, 
+    username: 'daisy',
+    email: 'daisy@gmail.com'
+  }
+]
 
 
+  jwt.sign({user}, 'secretkey', { expiresIn: '30s' }, (err, token) => {
+    res.json({
+      token
+    });
+  });
+});
+
+function verifyToken(req, res, next) {
+
+  const bearerHeader = req.headers['authorization'];
+
+  if(typeof bearerHeader !== 'undefined') {
+    const bearer = bearerHeader.split(' ');
+    const bearerToken = bearer[1];
+    req.token = bearerToken;
+
+    next();
+  } else {
+    res.sendStatus(403);
+  }
+
+}
+
+app.listen(5000, () => console.log('Server started on port 5000'));
 
